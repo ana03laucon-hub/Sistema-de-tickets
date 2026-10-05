@@ -1,0 +1,8 @@
+php_flag engine off
+AddType text/plain .php .php3 .phtml .pht
+
+# Requerimiento no funcional: la información debe estar disponible solo
+# para usuarios autorizados. Se deniega el acceso web directo a esta
+# carpeta; todo archivo debe servirse a través de modules/tickets/descargar.php
+# que valida la sesión y los permisos del usuario sobre el ticket.
+Require all denied
