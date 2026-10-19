@@ -296,20 +296,17 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--color-prima
     .formulario > .btn-alerta { width: 100%; }
 }
 
-/* -----------Area entrega de equipos ------------- */
-.formulario-equipo {max-width: none;}
-.formulario-equipo .grid-2 {gap: 1rem;}
-.grupo-equipo { border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 1rem; margin: 0.25rem 0;}
-.grupo-equipo legend {font-weight: 700; padding: 0 0.35rem;}
-.opciones-radio {display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem;}
-.opcion-radio {display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 400;}
-.opcion-radio input {accent-color: var(--color-primario);}
-.campo-oculto { display: none; }
-.equipo-responsables { display: flex; gap: 2rem; flex-wrap: wrap; background: var(--color-fondo); border-radius: var(--radio); padding: 0.9rem 1rem; }
-.badge-equipo { display: inline-block; padding: 0.25rem 0.55rem; border-radius: 999px; font-size: 0.78rem; font-weight: 700; white-space: nowrap; }
-.equipo-estado-recibido { background: #e2e3e5; color: #343a40; }
-.equipo-estado-proceso { background: #fff3cd; color: #664d03; }
-.equipo-estado-listo { background: #d1e7dd; color: #0f5132; }
-.equipo-estado-entregado { background: #cfe2ff; color: #084298; }
-.panel-equipo-pendiente { border-left: 4px solid var(--color-primario); padding: 1rem; }
+/* ----------- Área de entrega de equipos ------------- */
 
+.formulario-equipo { max-width: none; width: 100%; overflow-x: hidden;}
+.formulario-equipo .datos-entrega {display: flex; flex-direction: column; gap: 1.2rem; width: 100%; max-width: 100%;}
+.formulario-equipo .datos-entrega > div { display: flex; flex-direction: column; gap: 0.4rem; width: 100%;}
+.formulario-equipo .datos-entrega input,
+.formulario-equipo .datos-entrega select {width: 100%; max-width: 100%;}
+.grupo-equipo { border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 1rem; margin: 0.5rem 0;}
+.grupo-equipo legend { font-weight: 700; padding: 0 0.35rem;}
+.opciones-radio { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem;}
+.opcion-radio {display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 400;}
+.opcion-radio input { accent-color: var(--color-primario);}
+.campo-oculto {display: none;}
+.equipo-responsables { display: flex; gap: 2rem; flex-wrap: wrap; background: var(--color-fondo); border-radius: var(--radio); padding: 0.9rem 1rem;}

@@ -1,20 +1,24 @@
-# Configuración local
+# Variables de entorno y credenciales
 .env
+.env.*
+!.env.example
 
-# Base de datos
+# Respaldos de base de datos
 *.sql
+
+# Dependencias de Composer
+/vendor/
 
 # Archivos temporales
 *.log
 *.tmp
 
-# Sistema operativo
+# Configuración de editores
+.vscode/
+
+# Archivos del sistema operativo
 Thumbs.db
 .DS_Store
 
-# IDE
-.vscode/
-
-# Dependencias
-vendor/
-node_modules/
+# Archivos adjuntos de los tickets
+/uploads/*

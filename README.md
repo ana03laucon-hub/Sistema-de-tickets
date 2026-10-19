@@ -50,7 +50,7 @@ soporte PHP 8+ con extensión PDO (cPanel, Apache + mod_php, etc.).
 
 | Usuario | Contraseña  |
 |---------|-------------|
-| admin   | Admin2026*  |
+| admin   |   |
 
 **Importante:** cambiar esta contraseña inmediatamente después de la primera
 instalación, creando un nuevo usuario administrador y desactivando o
